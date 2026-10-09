@@ -1,0 +1,459 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fuego & Sazón</title>
+	<link rel="icon" type="image/png" href="img/logo1.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg sticky-top navbar-fuego">
+		<div class="container">
+			<a class="navbar-brand brand-text" href="#" onclick="mostrarSeccion('inicio'); return false;">Fuego & Sazón</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="navbar-nav ms-auto align-items-lg-center gap-2">
+					<li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSeccion('inicio'); return false;">Inicio</a></li>
+					<li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSeccion('platos'); return false;">Platos</a></li>
+					<li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSeccion('bebidas'); return false;">Bebidas</a></li>
+					<li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSeccion('nosotros'); return false;">Nosotros</a></li>
+					<li class="nav-item"><a class="btn-nav" href="#" onclick="mostrarSeccion('pedido'); return false;">Realizar Pedido</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<header>
+		<div class="titulo-header">
+			<img class="logo" src="img/logo1.png" alt="Logo de Fuego y Sazón">
+			<div>
+				<h1>🔥 Fuego & Sazón 🔥</h1>
+				<p>Donde el fuego se convierte en sabor</p>
+			</div>
+		</div>
+		<br><br>
+		<section class="seccion-portada">
+			<img class="portada" src="img/portada.png" alt="Comida a la parrilla">
+		</section>
+	</header>
+
+	<br>
+
+	<div class="container contenedor">
+		<div id="inicio" class="seccion">
+			<section class="info">
+				<h2>🔥 Sobre Fuego & Sazón</h2>
+				<p>Fuego & Sazón es un restaurante dedicado a ofrecer deliciosos platos preparados con ingredientes de calidad y el auténtico sabor de la parrilla.</p>
+				<p>Nuestro rubro es la gastronomía, ofreciendo platos, bebidas y diferentes opciones para disfrutar de una experiencia llena de sabor.</p>
+			</section>
+
+			<div class="info2">
+				<div class="row g-3">
+					<div class="col-md-6">
+						<div class="tarjeta h-100">
+							<h2>🎯 Misión</h2>
+							<p>Brindar a nuestros clientes alimentos deliciosos y de calidad, preparados con dedicación, ofreciendo un servicio agradable y una experiencia gastronómica inolvidable.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="tarjeta h-100">
+							<h2>🔭 Visión</h2>
+							<p>Ser un restaurante reconocido por su sabor, calidad y atención, convirtiéndonos en una de las opciones favoritas para quienes buscan disfrutar de una excelente comida.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<br>
+
+			<section class="info">
+				<h2>👥 ¿Quiénes son nuestros clientes?</h2>
+				<p>Nuestro público principal son familias y jóvenes adultos entre 18 y 45 años que buscan una experiencia de comida a la parrilla de calidad, ya sea para comer en el local, pedir para llevar o solicitar entrega a domicilio. Son personas que valoran la rapidez en la atención y poder revisar el menú y armar su pedido desde el celular.</p>
+			</section>
+
+			<h2>🔥 NUESTROS PRODUCTOS DESTACADOS</h2>
+
+			<div id="productosDestacados" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="tarjeta-destacada destacado">
+							<img class="img" src="img/plato1.png" alt="Lomo a la parrilla">
+							<span class="badge">⭐ Más Pedido</span>
+							<h3>🥩 Lomo a la Parrilla</h3>
+							<p>Delicioso lomo de res preparado a la parrilla y acompañado con papas.</p>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="tarjeta-destacada destacado">
+							<img class="img" src="img/plato2.png" alt="Pollo al fuego">
+							<span class="badge">🔥 Recomendado</span>
+							<h3>🍗 Pollo al Fuego</h3>
+							<p>Pollo marinado y cocinado al fuego para obtener un sabor intenso y delicioso.</p>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="tarjeta-destacada destacado">
+							<img class="img" src="img/plato3.png" alt="Pizza fuego">
+							<span class="badge">🍕 Favorito</span>
+							<h3>🍕 Pizza Fuego</h3>
+							<p>Pizza preparada con mozzarella, pepperoni y el toque especial de Fuego & Sazón.</p>
+						</div>
+					</div>
+				</div>
+
+				<button class="carousel-control-prev" type="button" data-bs-target="#productosDestacados" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</button>
+
+				<button class="carousel-control-next" type="button" data-bs-target="#productosDestacados" data-bs-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</button>
+			</div>
+
+			<section class="info">
+				<h2>🎥 Video Representativo</h2>
+				<video controls>
+					<source src="video/fuego-sazon.mp4" type="video/mp4">
+					No se puede reproducir este video.
+				</video>
+			</section>
+		</div>
+
+		<div id="platos" class="seccion">
+			<h2>🔥 Nuestros Platos</h2>
+			<div class="row g-3">
+				<div class="col-6 col-md-3">
+					<div class="tarjeta h-100">
+						<img class="img" src="img/plato1.png" alt="Lomo a la parrilla">
+						<h3>Lomo a la Parrilla</h3>
+						<p>Lomo de res con papas</p>
+						<p class="precio">S/ 32</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="tarjeta h-100">
+						<img class="img" src="img/plato2.png" alt="Pollo al fuego">
+						<h3>Pollo al Fuego</h3>
+						<p>Pollo marinado</p>
+						<p class="precio">S/ 28</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="tarjeta h-100">
+						<img class="img" src="img/plato3.png" alt="Pizza fuego">
+						<h3>Pizza Fuego</h3>
+						<p>Mozzarella y pepperoni</p>
+						<p class="precio">S/ 30</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="tarjeta h-100">
+						<img class="img" src="img/plato4.png" alt="Fuego Burger">
+						<h3>Fuego Burger</h3>
+						<p>Hamburguesa con queso</p>
+						<p class="precio">S/ 26</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="tarjeta h-100">
+						<img class="img" src="img/plato5.png" alt="Costillas BBQ">
+						<h3>Costillas BBQ</h3>
+						<p>Costillas de cerdo bañadas en salsa barbacoa ahumada</p>
+						<p class="precio">S/ 35</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="tarjeta h-100">
+						<img class="img" src="img/plato6.png" alt="Tacos de carne">
+						<h3>Tacos de Carne</h3>
+						<p>Tres tacos con carne asada, cebolla y cilantro</p>
+						<p class="precio">S/ 24</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="tarjeta h-100">
+						<img class="img" src="img/plato7.png" alt="Anticuchos">
+						<h3>Anticuchos</h3>
+						<p>Brochetas de corazón a la parrilla con papa y choclo</p>
+						<p class="precio">S/ 22</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="tarjeta h-100">
+						<img class="img" src="img/plato8.png" alt="Bife de chorizo">
+						<h3>Bife de Chorizo</h3>
+						<p>Cortes gruesos, con buen marmoleo para garantizar jugosidad y sabor intenso.</p>
+						<p class="precio">S/ 20</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="bebidas" class="seccion">
+			<h2>🥤 Nuestras Bebidas</h2>
+			<div class="row g-3">
+				<div class="col-6 col-md-3">
+					<div class="tarjeta h-100">
+						<img class="img" src="img/bebida1.png" alt="Limonada">
+						<h3>Limonada</h3>
+						<p>Limonada natural</p>
+						<p class="precio">S/ 8</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="tarjeta h-100">
+						<img class="img" src="img/bebida2.png" alt="Fresa Frozen">
+						<h3>Fresa Frozen</h3>
+						<p>Fresas con hielo</p>
+						<p class="precio">S/ 10</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="tarjeta h-100">
+						<img class="img" src="img/bebida3.png" alt="Jugo Tropical">
+						<h3>Jugo Tropical</h3>
+						<p>Mango y maracuyá</p>
+						<p class="precio">S/ 11</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="tarjeta h-100">
+						<img class="img" src="img/bebida4.png" alt="Chicha morada">
+						<h3>Chicha Morada</h3>
+						<p>Bebida tradicional peruana de maíz morado</p>
+						<p class="precio">S/ 9</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="tarjeta h-100">
+						<img class="img" src="img/bebida5.png" alt="Té Helado de durazno">
+						<h3>Té Helado de Durazno</h3>
+						<p>Refrescante té helado con sabor a durazno</p>
+						<p class="precio">S/ 9</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="tarjeta h-100">
+						<img class="img" src="img/bebida6.png" alt="Agua">
+						<h3>Agua con Gas</h3>
+						<p>Agua mineral bien helada</p>
+						<p class="precio">S/ 6</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="tarjeta h-100">
+						<img class="img" src="img/bebida7.png" alt="Naranjada">
+						<h3>Naranjada</h3>
+						<p>Jugo de naranja natural recién exprimido</p>
+						<p class="precio">S/ 10</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="tarjeta h-100">
+						<img class="img" src="img/bebida8.png" alt="Maracuyá">
+						<h3>Maracuyá Sour</h3>
+						<p>Bebida refrescante de maracuyá, versión sin alcohol</p>
+						<p class="precio">S/ 12</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="nosotros" class="seccion">
+			<h2 class="titulo-nosotros">👨‍💻 Desarrolladores de la página</h2>
+			<div class="row g-3 justify-content-center">
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="tarjeta dev h-100">
+						<h3>Takeshi Leyva Takahashi</h3>
+						<p class="rol">Programador</p>
+						<h4>Habilidades</h4>
+						<div class="skills">
+							<span>Lenguaje C#</span><span>HTML5</span><span>Algoritmos</span><span>Bootstrap</span><span>Python</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="tarjeta dev h-100">
+						<h3>Jhoanpiero Ñañez Palomino</h3>
+						<p class="rol">Programador</p>
+						<h4>Habilidades</h4>
+						<div class="skills">
+							<span>Programación web</span><span>HTML5</span><span>Estructura de la computadora</span><span>Git y GitHub</span><span>Python</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="tarjeta dev h-100">
+						<h3>Luciano Picon Canales</h3>
+						<p class="rol">Programador Python</p>
+						<h4>Habilidades</h4>
+						<div class="skills">
+							<span>Programación</span><span>Python</span><span>Algoritmos</span><span>Lógica de programación</span><span>Estructuras de datos</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="tarjeta dev h-100">
+						<h3>Jean Paul Santos Cuadros</h3>
+						<p class="rol">Programador C#</p>
+						<h4>Habilidades</h4>
+						<div class="skills">
+							<span>Programación orientada a objetos</span><span>C#</span><span>Mecánica automotriz</span><span>Visual Studio</span><span>Depuración de código</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="tarjeta dev h-100">
+						<h3>Dayron Ancajima Castro</h3>
+						<p class="rol">Programador y Analista</p>
+						<h4>Habilidades</h4>
+						<div class="skills">
+							<span>Programación</span><span>Python</span><span>C#</span><span>JavaScript</span><span>Pruebas de software</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="pedido" class="seccion">
+			<h2>Realizar Pedido</h2>
+
+			<div class="mb-3">
+				<label for="codigo" class="form-label">Código de cliente</label>
+				<input id="codigo" class="form-control" readonly>
+			</div>
+
+			<div class="mb-3">
+				<label for="nombre" class="form-label">Nombre del cliente</label>
+				<input id="nombre" class="form-control" placeholder="Escribe tu nombre">
+			</div>
+
+			<div class="mb-3">
+				<label for="producto" class="form-label">Producto</label>
+				<select id="producto" class="form-select">
+					<option value="">Selecciona un producto</option>
+					<option value="32">🥩 Lomo a la Parrilla - S/ 32</option>
+					<option value="28">🍗 Pollo al Fuego - S/ 28</option>
+					<option value="30">🍕 Pizza Fuego - S/ 30</option>
+					<option value="26">🍔 Fuego Burger - S/ 26</option>
+					<option value="35">🍖 Costillas BBQ - S/ 35</option>
+					<option value="24">🌮 Tacos de Carne - S/ 24</option>
+					<option value="22">🍢 Anticuchos - S/ 22</option>
+					<option value="20">🥗 Ensalada Fuego - S/ 20</option>
+					<option value="8">🍋 Limonada - S/ 8</option>
+					<option value="10">🍓 Fresa Frozen - S/ 10</option>
+					<option value="11">🥭 Jugo Tropical - S/ 11</option>
+					<option value="9">🥤 Chicha Morada - S/ 9</option>
+					<option value="9">🍑 Té Helado de Durazno - S/ 9</option>
+					<option value="6">💧 Agua con Gas - S/ 6</option>
+					<option value="10">🍊 Naranjada - S/ 10</option>
+					<option value="12">🥭 Maracuyá Sour - S/ 12</option>
+				</select>
+			</div>
+
+			<div class="mb-3">
+				<label for="cantidad" class="form-label">Cantidad</label>
+				<input type="number" id="cantidad" class="form-control" value="1" min="1">
+			</div>
+
+			<button onclick="agregar()" class="btn btn-agregar w-100 mb-3">➕ Agregar al pedido</button>
+
+			<div id="carrito">
+				<p>No hay productos agregados.</p>
+			</div>
+
+			<div class="total">
+				Total: S/ <span id="total">0</span>
+			</div>
+
+			<button onclick="confirmar()" class="btn btn-agregar w-100 mt-2">🔥 Confirmar Pedido</button>
+			<p id="mensaje"></p>
+
+			<button id="btnOtro" onclick="otroPedido()" class="btn btn-agregar w-100 mt-2" style="display:none;">🔄 Realizar otro pedido</button>
+
+			<div class="mapa">
+				<h2>Nuestra Ubicación:</h2>
+				<p>Encuéntranos en Fuego & Sazón:</p>
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62421.62007892807!2d-77.15788755136721!3d-12.088088699999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9e07cb45f95%3A0x15e92e23072918fa!2sFUEGO%20Y%20SAZ%C3%93N!5e0!3m2!1ses-419!2spe!4v1791519390430!5m2!1ses-419!2spe"
+					width="100%"
+					height="450"
+					style="border:0;"
+					allowfullscreen=""
+					loading="lazy">
+				</iframe>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<h2>🔥 Fuego & Sazón</h2>
+
+		<div class="contacto">
+			<p>📩 Correo: fuegoysazon@gmail.com</p>
+			<p>📞 Teléfono: +51 999 999 999</p>
+		</div>
+
+		<div class="redes">
+			<p>📱 Síguenos en nuestras redes:</p>
+			<a href="https://www.instagram.com/fue_gosazon?stkn=aWd2dWF4dGlncDZ3" target="_blank">Instagram</a>
+			<a href="https://www.tiktok.com/@fuego_sazonazo" target="_blank">TikTok</a>
+		</div>
+
+		<h2>🏢 Empresas referenciales</h2>
+
+		<section class="empresas">
+			<a href="https://lalucha.com.pe/" target="_blank">
+				<div class="empresa">
+					<h3>La Lucha</h3>
+					<p>Referencia en gastronomía peruana y atención al cliente.</p>
+				</div>
+			</a>
+
+			<a href="https://www.chilis.pe/" target="_blank">
+				<div class="empresa">
+					<h3>Chili's</h3>
+					<p>Referencia en restaurantes y experiencia gastronómica.</p>
+				</div>
+			</a>
+
+			<a href="https://rokys.com/" target="_blank">
+				<div class="empresa">
+					<h3>Rocky's</h3>
+					<p>Referencia en comida y restaurantes del mercado peruano.</p>
+				</div>
+			</a>
+		</section>
+
+		<p>🔥 <strong>Fuego & Sazón</strong></p>
+		<p>Sabor que enciende tus sentidos © 2026</p>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
